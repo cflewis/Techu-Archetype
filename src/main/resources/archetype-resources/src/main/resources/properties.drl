@@ -1,0 +1,8 @@
+package ${groupId}.${artifactId}
+
+rule "Print string"
+when
+    $s : java.lang.String()
+then
+    System.out.println("Drools says: \"" + $s + "\"");
+end

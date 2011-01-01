@@ -1,0 +1,9 @@
+# Set to target/classes folder
+classpath =
+
+# Classpath, and output from 
+#     mvn dependency:build-classpath | sed "/\[INFO\]/ d" | sed "s/:/;/g"
+native_classpath = 
+
+target = ${groupId}.${artifactId}.Model
+listener = ${groupId}.${artifactId}.Listener.SendEventListener  

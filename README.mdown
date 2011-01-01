@@ -1,0 +1,10 @@
+Techu Models Maven Archetype
+============================
+
+Use this to create skeletons for Techu models.
+
+You will need to manually populate the JPF file, using a command like
+
+    mvn dependency:build-classpath | sed "/\[INFO\]/ d" | sed "s/:/;/g"
+
+to get the classes required.
